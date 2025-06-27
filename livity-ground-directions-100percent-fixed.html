@@ -1,0 +1,141 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Directions to Livity Ground</title>
+  <!-- Font Awesome for icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+  <style>
+    :root {
+      --bg: #bcab84;
+      --button: #aa7942;
+      --text: #ffffff;
+      --radius: 24px;
+      --font: 'Manrope', sans-serif;
+    }
+
+    body {
+      background-color: var(--bg);
+      font-family: var(--font);
+      color: var(--text);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      padding: 40px 20px;
+      margin: 0;
+      box-sizing: border-box;
+    }
+
+    h1 {
+      font-size: 1.8rem;
+      font-weight: 700;
+      margin-bottom: 20px;
+    }
+
+    .logo {
+      width: 120px;
+      height: auto;
+      border-radius: 50%;
+      margin-bottom: 20px;
+    }
+
+    .section {
+      width: 100%;
+      max-width: 400px;
+      margin-bottom: 30px;
+      padding: 0 15px;
+      box-sizing: border-box;
+    }
+
+    .section p {
+      font-size: 1rem;
+      font-weight: 500;
+      margin-bottom: 15px;
+    }
+
+    .button {
+      display: block;
+      width: 100%;
+      background-color: var(--button);
+      color: var(--text);
+      text-decoration: none;
+      padding: 14px;
+      margin: 8px 0;
+      border-radius: var(--radius);
+      font-weight: 500;
+      font-size: 1rem;
+      transition: background-color 0.3s ease;
+      box-sizing: border-box;
+    }
+
+    .button:hover {
+      background-color: #8c632e;
+    }
+
+    .button i {
+      margin-right: 8px;
+    }
+
+    .coords {
+      margin: 12px auto 0;
+      font-size: 0.9rem;
+      color: var(--text);
+      cursor: pointer;
+      padding: 6px 10px;
+      border: 1px solid var(--text);
+      border-radius: 12px;
+      display: inline-block;
+      box-sizing: border-box;
+    }
+
+    .copied {
+      color: #00ff88;
+      font-size: 0.85rem;
+      margin-left: 8px;
+      display: none;
+    }
+  </style>
+</head>
+<body>
+  <img src="https://ugc.production.linktr.ee/0ee6230c-e94c-42af-a8e9-430fdd924ca3_Asset-1-4x.png?io=true&size=avatar-v3_0"
+       alt="Livity Ground Logo"
+       class="logo" />
+
+  <h1>How to Find Us</h1>
+
+  <div class="section">
+    <p><strong>1. First stop (for smooth arrival):</strong><br>Drive here first to avoid issues on the road.</p>
+    <a class="button" href="https://maps.app.goo.gl/ckpDQ1Z1Egtuani67" target="_blank"><i class="fas fa-map-marker-alt"></i>Google Maps</a>
+    <a class="button" href="https://maps.apple.com/?address=7540-650%20Vale%20de%20%C3%81gua,%20Portugal&auid=14102793998134046566&ll=37.891948,-8.642492&lsp=7618&q=7540-650" target="_blank"><i class="fab fa-apple"></i>Apple Maps</a>
+    <a class="button" href="https://waze.com/ul/hey9z6wvmv" target="_blank"><i class="fab fa-waze"></i>Waze</a>
+    <div class="coords" onclick="copyCoords('37.8750058, -8.6717682', this)">
+      Coordinates: 37.8750058, -8.6717682 <span class="copied">✓ Copied!</span>
+    </div>
+  </div>
+
+  <div class="section">
+    <p><strong>2. Final destination (8 minutes ahead):</strong><br>Look out for "Livity Ground" signs along the way.</p>
+    <a class="button" href="https://maps.app.goo.gl/4TNurQ2fssZmQUta9" target="_blank"><i class="fas fa-map-marker-alt"></i>Google Maps</a>
+    <a class="button" href="https://maps.apple.com/?address=7555-014%20Cercal%20do%20Alentejo,%20Portugal&auid=8003188513682122125&ll=37.854582,-8.644245&lsp=7618&q=7555-014%20Cercal%20do%20Alentejo" target="_blank"><i class="fab fa-apple"></i>Apple Maps</a>
+    <a class="button" href="https://waze.com/ul/hey9z771qy" target="_blank"><i class="fab fa-waze"></i>Waze</a>
+    <div class="coords" onclick="copyCoords('37.8545823, -8.6442447', this)">
+      Coordinates: 37.8545823, -8.6442447 <span class="copied">✓ Copied!</span>
+    </div>
+  </div>
+
+  <script>
+    function copyCoords(text, el) {
+      navigator.clipboard.writeText(text).then(() => {
+        const span = el.querySelector('.copied');
+        span.style.display = 'inline';
+        setTimeout(() => {
+          span.style.display = 'none';
+        }, 2000);
+      });
+    }
+  </script>
+</body>
+</html>
