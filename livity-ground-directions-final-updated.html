@@ -1,0 +1,206 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Directions to Livity Ground</title>
+
+  <!-- SEO & Social Meta Tags -->
+  <meta name="description" content="Directions to Livity Ground – easily navigate with Google Maps, Apple Maps, or Waze.">
+  <meta property="og:title" content="Livity Ground Directions">
+  <meta property="og:description" content="Drive straight to our meetup spot. Click for Google, Apple, or Waze directions!">
+  <meta property="og:image" content="https://ugc.production.linktr.ee/0ee6230c-e94c-42af-a8e9-430fdd924ca3_Asset-1-4x.png?io=true&size=avatar-v3_0">
+  <meta property="og:url" content="https://livityground.github.io/directions/">
+  <meta name="twitter:card" content="summary_large_image">
+
+  <!-- Favicon -->
+  <link rel="icon" href="https://ugc.production.linktr.ee/0ee6230c-e94c-42af-a8e9-430fdd924ca3_Asset-1-4x.png?io=true&size=avatar-v3_0" type="image/png">
+
+  <!-- Google Font: Manrope -->
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;700&display=swap" rel="stylesheet">
+
+  <!-- Font Awesome for icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+  <style>
+    :root {
+      --bg: #bcab84;
+      --button: #aa7942;
+      --text: #ffffff;
+      --radius: 24px;
+      --font: 'Manrope', sans-serif;
+    }
+    * { box-sizing: border-box; }
+    body {
+      background-color: var(--bg);
+      font-family: var(--font);
+      color: var(--text);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      padding: 40px 20px;
+      margin: 0;
+    }
+    h1 {
+      font-size: 1.8rem;
+      font-weight: 700;
+      margin-bottom: 10px;
+    }
+    .intro {
+      font-size: 0.95rem;
+      line-height: 1.4;
+      margin-bottom: 20px;
+      max-width: 400px;
+    }
+    .logo {
+      width: 120px;
+      height: auto;
+      border-radius: 50%;
+      margin-bottom: 20px;
+    }
+    .section {
+      width: 100%;
+      max-width: 400px;
+      margin-bottom: 30px;
+      padding: 0 15px;
+    }
+    .section p {
+      font-size: 1rem;
+      font-weight: 500;
+      margin-bottom: 15px;
+    }
+    .button {
+      display: block;
+      width: 100%;
+      background-color: var(--button);
+      color: var(--text);
+      text-decoration: none;
+      padding: 14px;
+      margin: 8px 0;
+      border-radius: var(--radius);
+      font-weight: 500;
+      font-size: 1rem;
+      transition: background-color 0.3s ease;
+    }
+    .button:hover {
+      background-color: #8c632e;
+    }
+    .button i {
+      margin-right: 8px;
+    }
+    .coords {
+      margin: 12px auto 0;
+      font-size: 0.9rem;
+      color: var(--text);
+      cursor: pointer;
+      padding: 6px 10px;
+      border: 1px solid var(--text);
+      border-radius: 12px;
+      display: inline-block;
+    }
+    .coords .copied {
+      color: #00ff88;
+      font-size: 0.85rem;
+      margin-left: 8px;
+      display: none;
+    }
+    .note {
+      font-size: 0.95rem;
+      margin: 20px 0;
+      line-height: 1.4;
+      max-width: 400px;
+    }
+    .note .hearts {
+      display: block;
+      margin-top: 8px;
+    }
+    .back-link {
+      margin-top: 30px;
+      font-size: 0.9rem;
+      color: var(--text);
+      text-decoration: underline;
+    }
+    iframe {
+      width: 100%;
+      max-width: 400px;
+      height: 200px;
+      border: none;
+      border-radius: 12px;
+      margin-top: 20px;
+    }
+  </style>
+</head>
+<body>
+  <img src="https://ugc.production.linktr.ee/0ee6230c-e94c-42af-a8e9-430fdd924ca3_Asset-1-4x.png?io=true&size=avatar-v3_0"
+       alt="Livity Ground Logo"
+       class="logo"
+       loading="lazy">
+
+  <h1>How to Find Us</h1>
+  <div class="intro">The best way to avoid bad roads is to split the trip in two: first drive to point one, which brings you to the start of the correct dirt track, then follow 'Point 2' for approx 8 minutes and look out for 'Livity Ground' signs to guide you.</div>
+    <div class="coords-note" style="font-size:0.9rem; margin-top:8px; font-style:italic; max-width:400px;">
+      Give thanks, you are nearly there, now follow the next point for 8 minutes.
+    </div>
+
+  <div class="section">
+    <p><strong>1. First stop:</strong><br>Drive here first to avoid issues on the road.</p>
+    <a class="button" href="https://maps.google.com/?q=37.8750058,-8.6717682" target="_blank" aria-label="Open Google Maps for first stop">
+      <i class="fas fa-map-marker-alt"></i>Google Maps
+    </a>
+    <a class="button" href="https://maps.apple.com/?ll=37.8750058,-8.6717682" target="_blank" aria-label="Open Apple Maps for first stop">
+      <i class="fab fa-apple"></i>Apple Maps
+    </a>
+    <a class="button" href="https://waze.com/ul?ll=37.8750058,-8.6717682&navigate=yes" target="_blank" aria-label="Open Waze for first stop">
+      <i class="fab fa-waze"></i>Waze
+    </a>
+    <div class="coords" onclick="copyCoords('37.8750058, -8.6717682', this)" aria-label="Copy coordinates for first stop">
+      Coordinates: 37.8750058, -8.6717682 <span class="copied">✓ Copied!</span><br><em>Give thanks, you are nearly there, now follow the next point for 8 minutes.</em>
+    </div>
+  </div>
+
+  <div class="section">
+    <p><strong>2. Final destination:</strong><br>Look out for "Livity Ground" signs along the way.</p>
+    <a class="button" href="https://maps.google.com/?q=37.8545823,-8.6442447" target="_blank" aria-label="Open Google Maps for final destination">
+      <i class="fas fa-map-marker-alt"></i>Google Maps
+    </a>
+    <a class="button" href="https://maps.apple.com/?ll=37.8545823,-8.6442447" target="_blank" aria-label="Open Apple Maps for final destination">
+      <i class="fab fa-apple"></i>Apple Maps
+    </a>
+    <a class="button" href="https://waze.com/ul?ll=37.8545823,-8.6442447&navigate=yes" target="_blank" aria-label="Open Waze for final destination">
+      <i class="fab fa-waze"></i>Waze
+    </a>
+    <div class="coords" onclick="copyCoords('37.8545823, -8.6442447', this)" aria-label="Copy coordinates for final destination">
+      Coordinates: 37.8545823, -8.6442447 <span class="copied">✓ Copied!</span>
+    </div>
+  </div>
+
+  <div class="note">
+    Whether you come by bus or car,<br>let Jah be your guiding star.
+    <span class="hearts">💚💛❤️</span>
+  </div>
+
+  <!-- Embedded Map -->
+  <iframe
+    src="https://www.google.com/maps?q=37.8545823,-8.6442447&output=embed"
+    allowfullscreen
+    aria-label="Map preview of final destination">
+  </iframe>
+
+  <!-- Back to Linktree -->
+  <a href="https://linktr.ee/livity.ground.roots" class="back-link" aria-label="Back to Linktree">
+    ← Back to Linktree
+  </a>
+
+  <script>
+    function copyCoords(text, el) {
+      navigator.clipboard.writeText(text).then(() => {
+        const span = el.querySelector('.copied');
+        span.style.display = 'inline';
+        setTimeout(() => { span.style.display = 'none'; }, 2000);
+      });
+    }
+  </script>
+</body>
+</html>
