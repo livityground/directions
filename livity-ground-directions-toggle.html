@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title data-en="Directions to Livity Ground" data-pt="Direções para Livity Ground">Directions to Livity Ground</title>
+
+  <!-- SEO & Social Meta Tags -->
+  <meta name="description" content="Directions to Livity Ground – easily navigate with Google Maps, Apple Maps, or Waze." data-pt="Direções para Livity Ground – navegue facilmente com Google Maps, Apple Maps ou Waze.">
+  <meta property="og:title" content="Livity Ground Directions">
+  <meta property="og:description" content="Drive straight to our meetup spot. Click for Google, Apple, or Waze directions!">
+  <meta property="og:image" content="https://ugc.production.linktr.ee/0ee6230c-e94c-42af-a8e9-430fdd924ca3_Asset-1-4x.png?io=true&size=avatar-v3_0">
+  <meta property="og:url" content="https://livityground.github.io/directions/">
+  <meta name="twitter:card" content="summary_large_image">
+
+  <!-- Favicon -->
+  <link rel="icon" href="https://ugc.production.linktr.ee/0ee6230c-e94c-42af-a8e9-430fdd924ca3_Asset-1-4x.png?io=true&size=avatar-v3_0" type="image/png">
+
+  <!-- Google Font: Manrope -->
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;700&display=swap" rel="stylesheet">
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+  <style>
+    :root {
+      --bg: #bcab84;
+      --button: #aa7942;
+      --text: #ffffff;
+      --radius: 24px;
+      --font: 'Manrope', sans-serif;
+    }
+    * { box-sizing: border-box; }
+    body { background-color: var(--bg); font-family: var(--font); color: var(--text); margin:0; padding:40px 20px; text-align:center; }
+    .logo { width:120px; border-radius:50%; margin:0 auto 10px; display:block; }
+    .lang-toggle { margin:0 auto 20px; }
+    .lang-toggle button { background:transparent; border:1px solid var(--text); color:var(--text); margin:0 5px; padding:5px 10px; border-radius:12px; cursor:pointer; font-weight:500; }
+    h1 { font-size:1.8rem; font-weight:700; margin:0 0 10px; }
+    .intro { font-size:0.95rem; line-height:1.4; margin:0 auto 20px; max-width:400px; }
+    .section { width:100%; max-width:400px; margin:0 auto 30px; }
+    .section p { font-size:1rem; font-weight:500; margin:0 0 15px; }
+    .button { display:block; width:100%; margin:8px auto; padding:14px; background-color:var(--button); color:var(--text); text-decoration:none; border-radius:var(--radius); font-size:1rem; font-weight:500; transition:background-color 0.3s; text-align:center; }
+    .button:hover { background-color:#8c632e; }
+    .coords { display:inline-block; margin:12px auto 0; padding:6px 10px; border:1px solid var(--text); border-radius:12px; font-size:0.9rem; cursor:pointer; }
+    .coords .copied { margin-left:8px; color:#00ff88; display:none; font-size:0.85rem; }
+    .coords-note { font-size:0.9rem; font-style:italic; margin:24px auto; max-width:400px; line-height:1.4; text-align:center; }
+    .note { font-size:0.95rem; line-height:1.4; max-width:400px; margin:20px auto; text-align:center; }
+    .hearts { display:block; margin:8px auto 0; }
+    iframe { width:100%; max-width:400px; height:200px; border:none; border-radius:12px; margin:30px auto 0; }
+    .back-link { display:block; margin:30px auto 0; font-size:0.9rem; text-decoration:underline; color:var(--text); }
+  </style>
+</head>
+<body>
+  <img src="https://ugc.production.linktr.ee/0ee6230c-e94c-42af-a8e9-430fdd924ca3_Asset-1-4x.png?io=true&size=avatar-v3_0"
+       alt="Livity Ground Logo"
+       class="logo"
+       loading="lazy">
+
+  <div class="lang-toggle">
+    <button id="en-btn">EN</button>
+    <button id="pt-btn">PT</button>
+  </div>
+
+  <h1 class="toggle" data-en="How to Find Us" data-pt="Como nos encontrar">How to Find Us</h1>
+  <div class="intro toggle"
+       data-en="The best way to avoid bad roads is to split the trip in two: first drive to <strong>Point 1</strong>, which brings you to the start of the correct dirt track, then follow <strong>Point 2</strong> for approximately 8 minutes and look out for 'Livity Ground' signs to guide you."
+       data-pt="A melhor forma de evitar estradas ruins é dividir a viagem em duas partes: primeiro conduza até o <strong>Ponto 1</strong>, que o levará ao início do caminho de terra correto, depois siga o <strong>Ponto 2</strong> por aproximadamente 8 minutos e fique atento às placas 'Livity Ground' para guiá-lo.">
+  </div>
+
+  <div class="section">
+    <p class="toggle" data-en="<strong>1. First stop:</strong><br>Drive here first to avoid issues on the road."
+       data-pt="<strong>1. Primeira paragem:</strong><br>Conduza até aqui primeiro para evitar problemas na estrada.">
+    </p>
+    <a class="button" href="https://maps.google.com/?q=37.8750058,-8.6717682" target="_blank"><i class="fas fa-map-marker-alt"></i><span class="toggle" data-en="Google Maps" data-pt="Google Maps">Google Maps</span></a>
+    <a class="button" href="https://maps.apple.com/?ll=37.8750058,-8.6717682" target="_blank"><i class="fab fa-apple"></i><span class="toggle" data-en="Apple Maps" data-pt="Apple Maps">Apple Maps</span></a>
+    <a class="button" href="https://waze.com/ul?ll=37.8750058,-8.6717682&navigate=yes" target="_blank"><i class="fab fa-waze"></i><span class="toggle" data-en="Waze" data-pt="Waze">Waze</span></a>
+    <div class="coords" onclick="copyCoords('37.8750058, -8.6717682', this)"><span>Coordinates: 37.8750058, -8.6717682</span><span class="copied">✓ Copied!</span></div>
+    <div class="coords-note toggle" data-en="Give thanks, you are nearly there, now follow the next point for approximately 8 minutes." data-pt="Agradeça, você está quase lá, agora siga o próximo ponto por aproximadamente 8 minutos.">
+      Give thanks, you are nearly there, now follow the next point for approximately 8 minutes.
+    </div>
+  </div>
+
+  <div class="section">
+    <p class="toggle" data-en="<strong>2. Final destination:</strong><br>Look out for 'Livity Ground' signs along the way." data-pt="<strong>2. Destino final:</strong><br>Fique atento às placas 'Livity Ground' ao longo do caminho.">
+    </p>
+    <a class="button" href="https://maps.google.com/?q=37.8545823,-8.6442447" target="_blank"><i class="fas fa-map-marker-alt"></i><span class="toggle" data-en="Google Maps" data-pt="Google Maps">Google Maps</span></a>
+    <a class="button" href="https://maps.apple.com/?ll=37.8545823,-8.6442447" target="_blank"><i class="fab fa-apple"></i><span class="toggle" data-en="Apple Maps" data-pt="Apple Maps">Apple Maps</span></a>
+    <a class="button" href="https://waze.com/ul?ll=37.8545823,-8.6442447&navigate=yes" target="_blank"><i class="fab fa-waze"></i><span class="toggle" data-en="Waze" data-pt="Waze">Waze</span></a>
+    <div class="coords" onclick="copyCoords('37.8545823, -8.6442447', this)"><span>Coordinates: 37.8545823, -8.6442447</span><span class="copied">✓ Copied!</span></div>
+  </div>
+
+  <div class="note toggle" data-en="Whether you come by bus or car,<br>let Jah be your guiding star." data-pt="Seja de ônibus ou carro,<br>deixe Jah ser sua estrela guia.">
+    Whether you come by bus or car,<br>let Jah be your guiding star.
+  </div>
+  <span class="hearts">💚💛❤️</span>
+
+  <iframe src="https://www.google.com/maps?q=37.8545823,-8.6442447&output=embed" allowfullscreen></iframe>
+  <a href="https://linktr.ee/livity.ground.roots" class="back-link toggle" data-en="← Back to Linktree" data-pt="← Voltar para Linktree">← Back to Linktree</a>
+
+  <script>
+    function setLang(lang) {
+      document.documentElement.lang = lang;
+      document.querySelectorAll('.toggle').forEach(el => el.innerHTML = el.getAttribute('data-' + lang));
+    }
+    document.getElementById('en-btn').addEventListener('click', () => setLang('en'));
+    document.getElementById('pt-btn').addEventListener('click', () => setLang('pt'));
+    // Initialize default language on load
+    window.onload = () => setLang('en');
+    function copyCoords(text, el) {
+      navigator.clipboard.writeText(text).then(() => {
+        el.querySelector('.copied').style.display = 'inline';
+        setTimeout(() => el.querySelector('.copied').style.display = 'none', 2000);
+      });
+    }
+  </script>
+</body>
+</html>
